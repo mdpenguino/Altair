@@ -1,3 +1,3 @@
-#Altair
+# Altair
 
-A desktop sync for MAL
+A desktop tool to sync MAL profiles, built with electron.
