@@ -3,6 +3,7 @@ const {app, BrowserWindow} = require('electron')
   const url = require('url')
   const MalAPI = require('mal-api')
 
+  // timestamping console
   var log = console.log;
   console.log = function() {
     var first_parameter = arguments[0];
@@ -27,6 +28,7 @@ const {app, BrowserWindow} = require('electron')
     log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters))
   }
 
+  // BrowserWindow script
   function createWindow () {
     win = new BrowserWindow({
       show: false,
