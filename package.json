@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "main": "src/main.js",
   "author": "mdpenguino",
-  "license": "GPL-3.0-only",
+  "license": "MIT",
   "dependencies": {
     "mal-api": "^2.0.0"
   }
