@@ -7,6 +7,7 @@
   "author": "mdpenguino",
   "license": "MIT",
   "dependencies": {
+    "node-mpv": "^1.4.3",
     "popura": "^1.2.5"
   }
 }
