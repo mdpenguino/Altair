@@ -7,6 +7,6 @@
   "author": "mdpenguino",
   "license": "MIT",
   "dependencies": {
-    "mal-api": "^2.0.0"
+    "popura": "^1.2.5"
   }
 }
