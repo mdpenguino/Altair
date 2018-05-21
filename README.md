@@ -3,4 +3,5 @@
 A desktop tool to sync MAL profiles, built with electron.
 
 ## Credits
-[mal-api](https://github.com/ChrisAlderson/mal-api) by Chris Alderson
+- [Node-MPV](https://github.com/00SteinsGate00/Node-MPV) by 00SteinsGate00
+- [Popura](https://github.com/lubien/popura) by Lubien
