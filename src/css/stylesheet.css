@@ -21,7 +21,8 @@ body {
   width: 225px;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: #E0E0E0;
 }
 
 .card:hover {
@@ -33,7 +34,7 @@ body {
 }
 
 .cardimg {
-    border-radius: 5px 5px 0 0;
+    border-radius: 8px 8px 0 0;
     width: 225px;
     height: 320px;
 }
