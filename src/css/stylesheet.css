@@ -66,4 +66,10 @@ body {
   flex-wrap: wrap;
   margin: 1em 0;
   background-color: grey;
+  flex-flow: row wrap;
+}
+
+.grid:after {
+  content: "";
+  flex: auto;
 }
