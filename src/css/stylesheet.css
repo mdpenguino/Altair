@@ -67,16 +67,17 @@ body {
 .grid {
   margin-left: -10px;
   margin-top: -10px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-basis: 30%;
   display: flex;
   flex-wrap: wrap;
   margin: 1em 0;
   background-color: grey;
   flex-flow: row wrap;
+  width: auto;
 }
 
-.grid:after {
+/*.grid:after {
   content: "";
   flex: auto;
-}
+}*/
