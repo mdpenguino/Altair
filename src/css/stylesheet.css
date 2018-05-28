@@ -50,17 +50,7 @@ body {
   transition: 0.3s;
   border-radius: 8px;
   background-color: #EFEFEF;
-  flex: 1;
   margin: 10px;
-  vertical-align: middle;
-}
-
-.card.is-empty {
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .card:hover {
@@ -85,16 +75,11 @@ body {
 }
 
 .grid {
-  list-style-type: none;
   justify-content: space-between;
   margin-left: -10px;
   margin-top: -10px;
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
   margin: 1em 0;
   background-color: #545454;
-  flex-flow: row wrap;
   width: auto;
   border-radius: 0.3rem;
 }
@@ -119,7 +104,17 @@ a:visited {
   text-decoration: none;
 }
 
-/*.grid:after {
-  content: "";
-  flex: auto;
-}*/
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-gap: 10rem;
+  justify-content: space-between;
+
+  /* boring properties */
+  list-style: none;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+li {
+}
