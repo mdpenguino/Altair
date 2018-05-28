@@ -1,13 +1,13 @@
-var emptyCells, i;
+var emptyCards, i;
 
-$(".grid.with-empty-cells").each(function() {
-  emptyCells = [];
+$(".grid.with-empty-card").each(function() {
+  emptyCards = [];
   for (i = 0; i < $(this).find(".card").length; i++) {
-    emptyCells.push(
+    emptyCards.push(
       $("<ul>", {
         class: "card is-empty"
       })
     );
   }
-  $(this).append(emptyCells);
+  $(this).append(emptyCards);
 });
