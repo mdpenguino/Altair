@@ -9,18 +9,22 @@
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
-    <script src="../src/js/colors.js" type="text/javascript">
+    <script src="../src/js/colors.js" type="text/javascript"></script>
 
     <script>if (window.module) module = window.module;</script>
 
     <title>Altair</title>
   </head>
 
-<body>
+<body style="background-color: rgb(46, 81, 162);">
   <div class="title">
     Altair
+    <select id="background" onchange="updateBackgroundColour(this)">
+      <option value="#2E51A2">MAL</option>
+      <option value="#FD755C">Kitsu</option>
+      <option value="#0099FF">AniList</option>
+    </select>
   </div>
-
 <ul>
   <li>
     <div class="card">

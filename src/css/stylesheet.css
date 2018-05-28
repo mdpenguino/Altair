@@ -11,13 +11,30 @@ Theming:
 
 #2E51A2 (mal blue)
 #FD755C (kitsu orange)
+#402F3F (kitsu secondary)
 #0099FF (anilist blue)
 */
 
-:root {
+/*:root {
   --primary-color: #2E51A2;
   --secondary-color: #EEEEEE;
+  --theme-color: #2E51A2;
+*/
+}
 
+select option[value="1"] {
+  background-color: #2E51A2;
+  .title.color: #EEEEEE;
+}
+
+select option[value="2"] {
+  #title.background-color: #FD755C;
+  #title.color: #402F3F;
+}
+
+select option[value="3"] {
+  background-color: #0099FF;
+  .title.color: #EEEEEE;
 }
 
 ul {
@@ -69,27 +86,6 @@ body {
   margin: 0;
 }
 
-.header--theme-button {
-  height: 30px;
-  width: 30px;
-  margin: 10px 5px 0 0;
-  display: inline-block;
-  border-top: 15px solid var(--theme-primary);
-  border-bottom: 15px solid var(--theme-secondary);
-  border-right: 0;
-  border-left: 0;
-  padding: 0;
-  box-shadow: 0 0 3px gray;
-}
-
-.header--theme-button:hover {
-  box-shadow: 2px 2px 2px gray;
-}
-
-.header--theme-button.active {
-  box-shadow: 3px 3px 3px gray;
-}
-
 .title {
   font-family: 'Maven Pro', sans-serif;
   font-size: 40px;
@@ -100,8 +96,8 @@ body {
   padding-right: 0px;
   user-select: none;
   cursor: default;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: inherit;
+  color: #EEEEEE;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
 }
 
