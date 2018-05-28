@@ -1,11 +1,11 @@
 var emptyCells, i;
 
-$(".test.with-empty-cells").each(function() {
+$(".grid.with-empty-cells").each(function() {
   emptyCells = [];
-  for (i = 0; i < $(this).find(".cell").length; i++) {
+  for (i = 0; i < $(this).find(".card").length; i++) {
     emptyCells.push(
       $("<ul>", {
-        class: "cell is-empty"
+        class: "card is-empty"
       })
     );
   }
