@@ -84,7 +84,6 @@ body {
   user-select: none;
   cursor: default;
   margin: 0;
-  transition-duration: 0.3;
   background-color: #545454;
 }
 
@@ -92,15 +91,14 @@ body {
   font-family: 'Maven Pro', sans-serif;
   font-size: 40px;
   text-align: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 0px;
   padding-right: 0px;
   user-select: none;
   cursor: default;
   background-color: #2E51A2;
   color: #EEEEEE;
-  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
   border-radius: 0 0 8px 8px;
 }
 
@@ -133,4 +131,12 @@ body {
 
 .cardtext {
   margin-top: 2px;
+}
+
+#background {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 13px;
 }
