@@ -83,15 +83,16 @@ body {
   font-size: 18px;
   user-select: none;
   cursor: default;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   background-color: #545454;
 }
+
 
 .title {
   font-family: 'Maven Pro', sans-serif;
   font-size: 40px;
   text-align: center;
-  padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 0px;
   padding-right: 0px;
@@ -137,6 +138,49 @@ body {
   display: inline-block;
   float: right;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-top: 13px;
+}
+
+#frame {
+  position: fixed;
+  top: 0px;
+  left: 6px;
+}
+
+#frame-bar {
+  -webkit-app-region: drag;
+  height: 24px;
+  background-color: #2E51A2;
+  padding: none;
+  margin: 0px;
+}
+
+#frame-bar-btns {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 1px;
+  right: 0px;
+}
+
+#frame-bar-btns button {
+ height: 32px;
+ width: 32px;
+ background-color: transparent;
+ border: none;
+ color: #F1F1F1;
+ font-size: 16px;
+}
+
+
+button#max-btn:hover {
+  background-color: #3F3F41;
+}
+
+button#min-btn:hover {
+  background-color: #3F3F41;
+}
+
+button#close-btn:hover {
+  background-color: #F8454D;
 }
