@@ -35,7 +35,7 @@ const {app, BrowserWindow} = require('electron')
       height: 600,
       minWidth: 800,
       minHeight: 600,
-      fullscreenable: false,
+      fullscreenable: true,
       frame: false,
       'web-preferences': {
         'web-security': false,
