@@ -135,6 +135,19 @@ body {
   margin-top: 2px;
 }
 
+.splashbody {
+  background-color: transparent;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.splashtext {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 #background {
   display: inline-block;
   float: right;

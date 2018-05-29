@@ -51,6 +51,7 @@ const {app, BrowserWindow} = require('electron')
     win.once('ready-to-show', () => {
       win.maximize()
       win.show()
+      splash.destroy()
     })
     win.webContents.openDevTools()
 
@@ -60,7 +61,36 @@ const {app, BrowserWindow} = require('electron')
     })
   }
 
+  function createSplash () {
+    splash = new BrowserWindow({
+      show: false,
+      width: 400,
+      height: 400,
+      minWidth: 400,
+      minHeight: 400,
+      maxWidth: 400,
+      maxHeight: 400,
+      fullscreenable: false,
+      maximizable: false,
+      frame: false,
+    })
+    splash.once('ready-to-show', () => {
+      splash.show()
+      console.log('Altair Splash Loaded')
+    })
+    splash.loadURL(url.format({
+      pathname: path.join(__dirname, 'splash.html'),
+      protocol: 'file',
+      slashes: true
+    }))
+    splash.on('closed', () => {
+      splash = null
+      console.log('Altair Splash Closed')
+    })
+  }
+
   app.on('ready', () => {
+    createSplash()
     createWindow()
     console.log('Altair Loaded')
   })
@@ -68,7 +98,6 @@ const {app, BrowserWindow} = require('electron')
   app.on('windows-all-closed', () => {
     if (process.platform !== 'darwin') {
       app.quit()
-
     }
   })
 
