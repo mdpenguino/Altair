@@ -84,6 +84,8 @@ body {
   user-select: none;
   cursor: default;
   margin: 0;
+  transition-duration: 0.3;
+  background-color: #545454;
 }
 
 .title {
@@ -96,9 +98,10 @@ body {
   padding-right: 0px;
   user-select: none;
   cursor: default;
-  background-color: inherit;
+  background-color: #2E51A2;
   color: #EEEEEE;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
+  border-radius: 0 0 8px 8px;
 }
 
 .card {
