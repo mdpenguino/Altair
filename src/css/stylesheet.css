@@ -20,6 +20,16 @@ Theming:
   --secondary-color: #EEEEEE;
   --theme-color: #2E51A2;
 */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    height: 10px;
 }
 
 select option[value="1"] {
