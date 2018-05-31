@@ -10,7 +10,7 @@ Theming:
 #32908f (darker blue)
 
 #2E51A2 (mal blue)
-#FD755C (kitsu orange)
+#F75139(kitsu orange)
 #402F3F (kitsu secondary)
 #0099FF (anilist blue)
 */
@@ -54,6 +54,7 @@ li#gridcards {
   height: 384px;
   border: 1px solid green;
 }
+
 
 h4 {
   margin-top: 0px;
@@ -102,6 +103,11 @@ body {
   width: 225px;
   height: 320px;
   border-radius: 10px 10px 0px 0px;
+  -webkit-filter: blur(0.5px);
+}
+
+.cardimg:hover {
+  -webkit-filter: blur(0px);
 }
 
 .card:hover {
@@ -154,6 +160,7 @@ body {
   vertical-align: middle;
   margin-right: 20px;
   margin-top: 13px;
+  text-align: center;
 }
 
 #frame {
