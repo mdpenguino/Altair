@@ -15,12 +15,6 @@ Theming:
 #0099FF (anilist blue)
 */
 
-/*:root {
-  --primary-color: #2E51A2;
-  --secondary-color: #EEEEEE;
-  --theme-color: #2E51A2;
-*/
-
 ::-webkit-scrollbar {
     width: 10px;
 }
