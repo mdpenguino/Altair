@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src https:; style-src 'self' https: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
@@ -24,16 +24,23 @@
       <button id="close-btn">x</button>
     </div>
 
-  <div id="header" class="title">
-    Altair
+  <header id="header">
+    <ul id="headergrid">
+      <li id="headersection"></li>
+      <li id="headersection">
+        Altair
+      </li>
+      <li>
     <select id="background" onchange="JavaScript:changeColor()">
       <option value="#2E51A2">MAL</option>
       <option value="#FD755C">Kitsu</option>
       <option value="#0099FF">AniList</option>
     </select>
-  </div>
-<ul>
-  <li>
+  </li>
+</ul>
+  </header>
+<ul id="gridcontainer">
+  <li id="gridcards">
     <div class="card">
       <a href="">
       <img class="cardimg" draggable="false" src="https://myanimelist.cdn-dena.com/images/anime/1614/90408.jpg" alt="anime cover">
@@ -45,7 +52,7 @@
     </div>
   </li>
 
-  <li>
+  <li id="gridcards">
     <div class="card">
       <a href="">
       <img class="cardimg" draggable="false" src="https://myanimelist.cdn-dena.com/images/anime/1114/91791.jpg" alt="anime cover">
@@ -57,7 +64,7 @@
     </div>
   </li>
 
-  <li>
+  <li id="gridcards">
     <div class="card">
       <a href="">
       <img class="cardimg" draggable="false" src="https://myanimelist.cdn-dena.com/images/anime/1031/90444.jpg" alt="anime cover">
@@ -69,16 +76,16 @@
     </div>
   </li>
 
-  <li>
+  <li id="gridcards">
 
   </li>
 
-  <li>
+  <li id="gridcards">
   </li>
 
-  <li></li>
-  <li></li>
-  <li></li>
+  <li id="gridcards"></li>
+  <li id="gridcards"></li>
+  <li id="gridcards"></li>
 </ul>
 </body>
 </html>

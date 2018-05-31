@@ -26,22 +26,18 @@ Theming:
     height: 10px;
 }
 
-select option[value="1"] {
-  background-color: #2E51A2;
-  .title.color: #EEEEEE;
+ul#headergrid {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 0 0 0;
 }
 
-select option[value="2"] {
-  #title.background-color: #FD755C;
-  #title.color: #402F3F;
+li#headersection {
+
 }
 
-select option[value="3"] {
-  background-color: #0099FF;
-  .title.color: #EEEEEE;
-}
-
-ul {
+ul#gridcontainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 225px);
   grid-gap: 1rem;
@@ -54,7 +50,7 @@ ul {
   margin: 0 0 0 0;
 }
 
-li {
+li#gridcards {
   height: 384px;
   border: 1px solid green;
 }
@@ -92,21 +88,6 @@ body {
   background-color: #545454;
 }
 
-
-.title {
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-left: 0px;
-  padding-right: 0px;
-  user-select: none;
-  cursor: default;
-  background-color: #2E51A2;
-  color: #EEEEEE;
-  border-radius: 0 0 8px 8px;
-}
-
 .card {
   width: 225px;
   max-width: 225px;
@@ -128,7 +109,7 @@ body {
 }
 
 .container {
-  padding: 0px 16px;
+  padding: 0px 12px;
   height: 60px;
   overflow: hidden;
   white-space: nowrap;
@@ -154,6 +135,17 @@ body {
 #header {
   width: 100%;
   z-index: 9999;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  user-select: none;
+  cursor: default;
+  background-color: #2E51A2;
+  color: #EEEEEE;
+  border-radius: 0 0 8px 8px;
 }
 
 #background {
