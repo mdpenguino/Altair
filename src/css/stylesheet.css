@@ -106,12 +106,13 @@ body {
   -webkit-filter: blur(0.5px);
 }
 
-.cardimg:hover {
-  -webkit-filter: blur(0px);
-}
 
 .card:hover {
   box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .cardimg {
+    -webkit-filter: blur(0px);
 }
 
 .container {
