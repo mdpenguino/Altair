@@ -227,6 +227,7 @@ select {
   position: fixed;
   top: 1px;
   right: 0px;
+  z-index: 3001;
 }
 
 #frame-bar-btns button {
@@ -236,17 +237,21 @@ select {
  border: none;
  color: #F1F1F1;
  font-size: 16px;
+ z-index: 3002;
 }
 
 
 button#max-btn:hover {
   background-color: #3F3F41;
+   z-index: 3004;
 }
 
 button#min-btn:hover {
   background-color: #3F3F41;
+   z-index: 3004;
 }
 
 button#close-btn:hover {
   background-color: #F8454D;
+   z-index: 3004;
 }
