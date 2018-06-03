@@ -33,7 +33,6 @@ ul#headergrid {
 }
 
 li#headersection {
-
 }
 
 ul#gridcontainer {
@@ -51,7 +50,7 @@ ul#gridcontainer {
 
 li#gridcards {
   height: 384px;
-  border: 1px solid green;
+  border: 1px solid transparent;
 }
 
 
@@ -128,6 +127,25 @@ select {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
+
+.navheader {
+  height: 32px;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background-color: #666666;
+  border-bottom: 1px solid #999999;
+}
+
+#navheader-text {
+  padding: 0 0 0 0;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 16px;
+  align-items: middle;
+  background-color: #666666;
 }
 
 .card {
