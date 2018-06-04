@@ -155,14 +155,15 @@ p#navheader-text {
 
   animation-duration: 0.420s;
   animation-name: cardfadein;
+  animation-fill-mode:
 }
 
 @keyframes cardfadein {
-  0%    {opacity: 0;}
-  25%   {opacity: 0.25;}
-  50%   {opacity: 0.50;}
-  75%   {opacity: 0.75;}
-  100%  {opacity: 1;}
+  0%    {opacity: 0; -webkit-filter: blur(0.9px);}
+  25%   {opacity: 0.25; -webkit-filter: blur(0.8x);}
+  50%   {opacity: 0.50; -webkit-filter: blur(0.7px);}
+  75%   {opacity: 0.75; -webkit-filter: blur(0.6px);}
+  100%  {opacity: 1; -webkit-filter: blur(0.5px);}
 }
 
 .cardimg {
