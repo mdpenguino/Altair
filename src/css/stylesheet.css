@@ -130,7 +130,6 @@ select {
 }
 
 .navheader {
-  height: 32px;
   width: 100%;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -138,14 +137,11 @@ select {
   border-bottom: 1px solid #999999;
 }
 
-#navheader-text {
-  padding: 0 0 0 0;
-  margin-top: 8px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  font-size: 16px;
-  align-items: middle;
+p#navheader-text {
   background-color: #666666;
+  color: #f3f3f3;
+  margin: 0 0 0 0;
+  padding: 8px 0 8px 16px;
 }
 
 .card {
@@ -156,6 +152,17 @@ select {
   background-color: #EFEFEF;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
   transition: 0.3s;
+
+  animation-duration: 0.420s;
+  animation-name: cardfadein;
+}
+
+@keyframes cardfadein {
+  0%    {opacity: 0;}
+  25%   {opacity: 0.25;}
+  50%   {opacity: 0.50;}
+  75%   {opacity: 0.75;}
+  100%  {opacity: 1;}
 }
 
 .cardimg {
