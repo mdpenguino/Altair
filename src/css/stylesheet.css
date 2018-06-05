@@ -108,9 +108,10 @@ select {
   cursor: pointer;
 }
 
-.preloader * {
-  -webkit-transition: none !important;
-  -webkit-animation: none !important;
+.preloader *,
+.preloader *:before,
+.preloader *:after {
+  animation-play-state: paused !important;
 }
 
 /* Arrow */
@@ -161,7 +162,7 @@ p#navheader-text {
   animation-duration: 0.65s;
   animation-name: cardfadein;
   animation-fill-mode: both;
-  animation-delay: 0.1s;
+  animation-delay: 0.4s;
 }
 
 @keyframes cardfadein {
@@ -188,7 +189,7 @@ p#navheader-text {
 
   animation-duration: 0.7s;
   animation-name: cardimgfadein;
-  animation-delay: 0.1s;
+  animation-delay: 0.4s;
 }
 
 

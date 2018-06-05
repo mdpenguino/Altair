@@ -38,7 +38,7 @@ function changeColor(){
       };
 })();
 
-window.addEventListener(
+/* window.addEventListener(
     'load',
     function load()
     {
@@ -46,3 +46,12 @@ window.addEventListener(
         document.body.classList.remove('preloader');
     },
     false);
+*/
+
+document.documentElement.className += "preloader";
+
+window.addEventListener("load", showPage, false);
+
+function showPage() {
+  document.documentElement.className = document.documentElement.className.replace("preloader","");
+}
