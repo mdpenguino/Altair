@@ -37,3 +37,12 @@ function changeColor(){
         }
       };
 })();
+
+window.addEventListener(
+    'load',
+    function load()
+    {
+        window.removeEventListener('load', load, false);
+        document.body.classList.remove('preloader');
+    },
+    false);

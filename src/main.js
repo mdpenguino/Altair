@@ -54,6 +54,8 @@ const {app, BrowserWindow} = require('electron')
       splash.destroy()
     })
     win.webContents.openDevTools()
+    win.webContents.focus()
+
 
     win.on('closed', () => {
       win = null
