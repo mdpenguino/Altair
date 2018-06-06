@@ -53,6 +53,14 @@ li#gridcards {
   border: 1px solid transparent;
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 h4 {
   margin-top: 0px;
@@ -86,7 +94,6 @@ body {
   padding: 0px;
   background-color: #545454;
 }
-
 
 /* Custom Select */
 .select {
@@ -160,12 +167,10 @@ p#navheader-text {
   transition: 0.3s ease-in-out;
 
   transform: translateZ(0);
-  animation-duration: 0.65s;
+  animation-duration: 0.5s;
   animation-name: cardfadein;
   animation-fill-mode: both;
-  animation-delay: 0.4s;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
+  animation-delay: 0.3s;
 }
 
 @keyframes cardfadein {
@@ -178,7 +183,7 @@ p#navheader-text {
 
 @keyframes cardimgfadein {
   0%   {-webkit-filter: blur(0.9px);}
-  25%  {-webkit-filter: blur(0.8x);}
+  25%  {-webkit-filter: blur(0.8px);}
   50%  {-webkit-filter: blur(0.7px);}
   75%  {-webkit-filter: blur(0.6px);}
   100% {-webkit-filter: blur(0.5px);}
@@ -190,12 +195,10 @@ p#navheader-text {
   border-radius: 10px 10px 0px 0px;
   -webkit-filter: blur(0.5px);
 
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   transform: translateZ(0);
-  animation-duration: 0.7s;
+  animation-duration: 0.55s;
   animation-name: cardimgfadein;
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 
@@ -205,7 +208,7 @@ p#navheader-text {
 
 .card:hover .cardimg {
     -webkit-filter: blur(0px);
-    transition: 0.3s;
+    transition: 1s ease-in-out;
 }
 
 .container {

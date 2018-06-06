@@ -38,16 +38,7 @@ function changeColor(){
       };
 })();
 
-/* window.addEventListener(
-    'load',
-    function load()
-    {
-        window.removeEventListener('load', load, false);
-        document.body.classList.remove('preloader');
-    },
-    false);
-*/
-
+//CSS Card Animation Delay
 document.documentElement.className += "preloader";
 
 window.addEventListener("load", showPage, false);
