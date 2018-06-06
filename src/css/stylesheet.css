@@ -201,6 +201,17 @@ p#navheader-text {
   animation-delay: 0.3s;
 }
 
+#imgtext {
+  -webkit-filter: blur(0px);
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 32px;
+  -webkit-text-fill-color: #000000;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #EEEEEE;
+}
+
 
 .card:hover {
   box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.2);
