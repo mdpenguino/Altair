@@ -40,7 +40,8 @@ const {app, BrowserWindow} = require('electron')
       'web-preferences': {
         'web-security': false,
         nodeIntegration: false,
-        preload: path.join(__dirname, 'js/preload.js')
+        preload: path.join(__dirname, 'js/preload.js'),
+      icon: path.join(__dirname, 'assets\icons\png\256x256.png')
       }
     })
     win.loadURL(url.format({
