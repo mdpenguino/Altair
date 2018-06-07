@@ -31,6 +31,7 @@ const {app, BrowserWindow} = require('electron')
   function createWindow () {
     win = new BrowserWindow({
       show: false,
+      icon: path.join(__dirname, 'assets/icons/png/256x256.png'),
       width: 800,
       height: 600,
       minWidth: 800,
@@ -40,8 +41,7 @@ const {app, BrowserWindow} = require('electron')
       'web-preferences': {
         'web-security': false,
         nodeIntegration: false,
-        preload: path.join(__dirname, 'js/preload.js'),
-      icon: path.join(__dirname, 'assets\icons\png\256x256.png')
+        preload: path.join(__dirname, 'js/preload.js')
       }
     })
     win.loadURL(url.format({
@@ -76,6 +76,7 @@ const {app, BrowserWindow} = require('electron')
       fullscreenable: false,
       maximizable: false,
       frame: false,
+      icon: path.join(__dirname, 'assets/icons/png/256x256.png')
     })
     splash.once('ready-to-show', () => {
       splash.show()
