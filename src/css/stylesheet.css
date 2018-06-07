@@ -203,13 +203,13 @@ p#navheader-text {
   animation-delay: 0.3s;
 }
 
-#imgtext {
+a#imgtext {
   -webkit-filter: blur(0px);
   position: absolute;
   top: 1px;
   right: 15px;
-  font-size: 36px;
-  -webkit-text-fill-color: #000000;
+  font-size: 40px;
+  -webkit-text-fill-color: #FCC151;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #EEEEEE;
   cursor: default;
