@@ -1,13 +1,18 @@
 {
   "name": "Altair",
   "productName": "Altair",
-  "description": "MAL Scraper",
+  "description": "My Anime List scraper",
   "version": "0.1.0",
   "main": "src/main.js",
   "author": "mdpenguino",
   "license": "MIT",
+  "private": "true",
   "dependencies": {
     "node-mpv": "^1.4.3",
     "popura": "^1.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mdpenguino/altair.git"
   }
 }
