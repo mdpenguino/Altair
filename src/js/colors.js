@@ -1,3 +1,5 @@
+require('electron-titlebar')
+
 //Colour switching code for header
 function changeColor(){
   var newColor = document.getElementById('background').value;

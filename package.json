@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": "true",
   "dependencies": {
+    "electron-titlebar": "0.0.3",
     "node-mpv": "^1.4.3",
     "popura": "^1.2.5"
   },
