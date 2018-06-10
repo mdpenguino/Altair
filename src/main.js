@@ -54,7 +54,7 @@ const {app, BrowserWindow, ipc} = require('electron')
     win.once('ready-to-show', () => {
       win.maximize()
       win.show()
-      splash.destroy()
+      //splash.destroy()
     })
     win.webContents.setFrameRate(60)
     win.webContents.openDevTools()
@@ -74,8 +74,8 @@ const {app, BrowserWindow, ipc} = require('electron')
       height: 256,
       minWidth: 256,
       minHeight: 256,
-      maxWidth: 256,
-      maxHeight: 256,
+  //    maxWidth: 256,
+//      maxHeight: 256,
       fullscreenable: false,
       maximizable: false,
       frame: false,
