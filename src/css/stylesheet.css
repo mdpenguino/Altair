@@ -360,13 +360,25 @@ button#close-btn:hover {
   width: 225px;
   height: 320px;
   border-radius: 2px 2px 2px 2px;
+  padding: 5px;
+  background-color: #b1b2ae;
 }
+
+/*.modimgpad {
+  width: 225px;
+  height: 320px;
+  margin: 5px;
+  background-color: grey;
+}*/
 
 .spoiler {
 	filter: blur(5px);
 	transition-property: -webkit-filter;
 	transition-duration: .420s;
   font-size: 15px;
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 8px 8px 8px 8px;
 }
 .spoiler:hover, .spoiler:focus, .spoiler:active {
 	filter: blur(0px);
@@ -378,6 +390,7 @@ button#close-btn:hover {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding-top: 4px;
 }
 
 .close:hover,
