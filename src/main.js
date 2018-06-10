@@ -37,10 +37,12 @@ const {app, BrowserWindow, ipc} = require('electron')
       minWidth: 800,
       minHeight: 600,
       fullscreenable: true,
-      frame: false,
+      frame: true,
       'web-preferences': {
         'web-security': false,
         nodeIntegration: false,
+        nodeIntegrationInWorker: true,
+        offscreen: true,
         preload: path.join(__dirname, 'js/preload.js')
       }
     })
@@ -54,6 +56,7 @@ const {app, BrowserWindow, ipc} = require('electron')
       win.show()
       splash.destroy()
     })
+    win.webContents.setFrameRate(60)
     win.webContents.openDevTools()
     win.webContents.focus()
 
