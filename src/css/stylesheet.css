@@ -356,6 +356,22 @@ button#close-btn:hover {
     to {opacity:1}
 }
 
+.modalimg {
+  width: 225px;
+  height: 320px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.spoiler {
+	filter: blur(5px);
+	transition-property: -webkit-filter;
+	transition-duration: .420s;
+  font-size: 15px;
+}
+.spoiler:hover, .spoiler:focus, .spoiler:active {
+	filter: blur(0px);
+}
+
 /* The Close Button */
 .close {
     color: #aaaaaa;
