@@ -4,39 +4,6 @@ function changeColor(){
 	document.getElementById('header').style.background = newColor;
 }
 
-/*Frameless window buttons and actions
-(function () {
-
-      const remote = require('electron').remote;
-
-      function init() {
-        document.getElementById("min-btn").addEventListener("click", function (e) {
-          const window = remote.getCurrentWindow();
-          window.minimize();
-        });
-
-        document.getElementById("max-btn").addEventListener("click", function (e) {
-          const window = remote.getCurrentWindow();
-          if (!window.isMaximized()) {
-            window.maximize();
-          } else {
-            window.unmaximize();
-          }
-        });
-
-        document.getElementById("close-btn").addEventListener("click", function (e) {
-          const window = remote.getCurrentWindow();
-          window.close();
-        });
-      };
-
-      document.onreadystatechange = function () {
-        if (document.readyState == "complete") {
-          init();
-        }
-      };
-})(); */
-
 //CSS Card Animation Delay / Wait for Page Load
 document.documentElement.className += "preloader";
 
