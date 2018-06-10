@@ -7,7 +7,7 @@ function changeColor(){
   document.getElementById('frame-bar').style.background = newColor;
 }
 
-//Frameless window buttons and actions
+/*Frameless window buttons and actions
 (function () {
 
       const remote = require('electron').remote;
@@ -38,9 +38,9 @@ function changeColor(){
           init();
         }
       };
-})();
+})(); */
 
-//CSS Card Animation Delay
+//CSS Card Animation Delay / Wait for Page Load
 document.documentElement.className += "preloader";
 
 window.addEventListener("load", showPage, false);

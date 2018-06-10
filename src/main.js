@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipc} = require('electron')
   const path = require('path')
   const url = require('url')
 
@@ -67,15 +67,16 @@ const {app, BrowserWindow} = require('electron')
   function createSplash () {
     splash = new BrowserWindow({
       show: false,
-      width: 400,
-      height: 400,
-      minWidth: 400,
-      minHeight: 400,
-      maxWidth: 400,
-      maxHeight: 400,
+      width: 256,
+      height: 256,
+      minWidth: 256,
+      minHeight: 256,
+      maxWidth: 256,
+      maxHeight: 256,
       fullscreenable: false,
       maximizable: false,
       frame: false,
+      transparent: true,
       icon: path.join(__dirname, 'assets/icons/png/256x256.png')
     })
     splash.once('ready-to-show', () => {
