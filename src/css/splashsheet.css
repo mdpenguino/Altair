@@ -6,6 +6,7 @@ html {
   /*  -webkit-app-region: nodrag;
   animation: fadein 10s;
   animation-delay: 1.5s;*/
+  position: absolute;
   -webkit-app-region: no-drag;
 }
 

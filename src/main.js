@@ -80,6 +80,7 @@ const {app, BrowserWindow, ipc} = require('electron')
       maximizable: false,
       frame: false,
       transparent: true,
+      resizable: false,
       icon: path.join(__dirname, 'assets/icons/png/256x256.png')
     })
     splash.once('ready-to-show', () => {
