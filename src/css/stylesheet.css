@@ -64,6 +64,15 @@ body, html {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 23px;
+}
+
 h4 {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -342,15 +351,17 @@ button#close-btn:hover {
 
 /* Modal Content */
 .modal-content {
-    background-color: #EFEFEF;
-    margin: auto;
-    padding-left: 15px;
-    padding-top: 5px;
-    border: 1px solid #888;
-    width: 85%;
-    animation: fadeModal;
-    animation-duration: 0.420s;
-    border-radius: 6px 6px 4px 4px;
+  background-color: #EFEFEF;
+  margin: auto;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #888;
+  width: 85%;
+  animation: fadeModal;
+  animation-duration: 0.420s;
+  border-radius: 6px 6px 4px 4px;
 }
 
 @-webkit-keyframes fadeModal {
@@ -366,39 +377,54 @@ button#close-btn:hover {
   background-color: #b1b2ae;
 }
 
-/*.modimgpad {
-  width: 225px;
-  height: 320px;
-  margin: 5px;
-  background-color: grey;
-}*/
+.spoilercontainer { /* The Div that holds the 'spoiler' class */
+  background-color: #e1e1e1;
+  padding: 5px;
+  border-radius: 12px 12px 12px 12px;
+  display: inline-block;
+  clear: both;
+  border: solid 1px #EDEDED;
+}
 
-.spoiler {
-	filter: blur(5px);
+.spoilertext {
+	filter: blur(3px);
 	transition-property: -webkit-filter;
 	transition-duration: .420s;
   font-size: 15px;
-  background-color: #e0e0e0;
-  padding: 5px;
-  border-radius: 8px 8px 8px 8px;
+  margin: 4px 4px 4px 4px;
 }
-.spoiler:hover, .spoiler:focus, .spoiler:active {
+.spoilertext:hover, .spoilertext:focus, .spoilertext:active {
 	filter: blur(0px);
+}
+
+#modalgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  grid-gap: 1rem;
+  justify-content: space-around;
+
+  list-style: none;
+  padding: 1rem;
+  margin: 0 0 0 0;
+}
+
+#modalgridcardtext {
+  width: 200%
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding-top: 4px;
-    padding-right: 20px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 4px;
+  padding-right: 20px;
 }
 
 .close:hover,
 .close:focus {
-    color: #F8454D;
-    text-decoration: none;
-    cursor: pointer;
+  color: #F8454D;
+  text-decoration: none;
+  cursor: pointer;
 }
