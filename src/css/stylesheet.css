@@ -368,6 +368,10 @@ h3.modaltitle {
   animation: fadeModal;
   animation-duration: 0.420s;
   border-radius: 6px 6px 4px 4px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translateZ(0);
 }
 
 @-webkit-keyframes fadeModal {
@@ -397,14 +401,24 @@ p.modaldesc {
 }
 
 .spoilertext {
-	filter: blur(3px);
-	transition-property: -webkit-filter;
-	transition-duration: .420s;
   font-size: 15px;
   margin: 4px 4px 4px 4px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translateZ(0);
+  animation: spoilerblur;
+  animation-duration: 0.3s;
+  -webkit-filter: blur(3px);
 }
+
 .spoilertext:hover, .spoilertext:focus, .spoilertext:active {
 	filter: blur(0px);
+}
+
+@-webkit-keyframes spoilerblur {
+from  {-webkit-filter: blur(3px);}
+to    {-webkit-filter: blur(0px);}
 }
 
 #modalgrid {
