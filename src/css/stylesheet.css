@@ -15,11 +15,11 @@ Theming:
 #0099FF (anilist blue)
 */
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   width: 10px;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
@@ -365,8 +365,7 @@ h3.modaltitle {
   padding-bottom: 15px;
   border: 1px solid #888;
   width: 85%;
-  animation: fadeModal;
-  animation-duration: 0.420s;
+  animation: fadeModal 0.420s ease-in-out;
   border-radius: 6px 6px 4px 4px;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -401,6 +400,11 @@ p.modaldesc {
 }
 
 .spoilertext {
+<<<<<<< HEAD
+=======
+	filter: blur(3px);
+  transition: .3s -webkit-filter linear;
+>>>>>>> b16713c3ade2a0ffcbe2f246df6b709d567c5dfb
   font-size: 15px;
   margin: 4px 4px 4px 4px;
   -webkit-backface-visibility: hidden;
