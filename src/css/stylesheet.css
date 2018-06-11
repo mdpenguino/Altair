@@ -351,6 +351,11 @@ button#close-btn:hover {
 }
 
 /* Modal Content */
+h3.modaltitle {
+  margin-top: 11px;
+  margin-bottom: 8px;
+}
+
 .modal-content {
   background-color: #EFEFEF;
   margin: auto;
@@ -376,6 +381,10 @@ button#close-btn:hover {
   border-radius: 2px 2px 2px 2px;
   padding: 5px;
   background-color: #b1b2ae;
+}
+
+p.modaldesc {
+ margin: 0 0 4px 4px;
 }
 
 .spoilercontainer { /* The Div that holds the 'spoiler' class */
