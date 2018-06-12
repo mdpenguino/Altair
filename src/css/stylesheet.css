@@ -400,29 +400,36 @@ p.modaldesc {
 }
 
 .spoilertext {
-<<<<<<< HEAD
-=======
-	filter: blur(3px);
-  transition: .3s -webkit-filter linear;
->>>>>>> b16713c3ade2a0ffcbe2f246df6b709d567c5dfb
-  font-size: 15px;
-  margin: 4px 4px 4px 4px;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-transform: translateZ(0);
-  animation: spoilerblur;
-  animation-duration: 0.3s;
-  -webkit-filter: blur(3px);
+font-size: 15px;
+margin: 0 auto;
+cursor: pointer;
+position: relative;
+background-color: #B1B2AE;
+padding: 10px 10px 10px 10px;
+border-radius: 2px;
+color: #000000;
 }
 
-.spoilertext:hover, .spoilertext:focus, .spoilertext:active {
-	filter: blur(0px);
+.spoilertext.on {
+color: rgba(0,0,0,0);
+text-shadow: 0 0 10px #000;
 }
 
-@-webkit-keyframes spoilerblur {
-from  {-webkit-filter: blur(3px);}
-to    {-webkit-filter: blur(0px);}
+.spoilertext.on:before { /* Spoiler Button*/
+content: 'Spoilers Ahead';
+position: absolute;
+text-shadow: none;
+color: #FFFFFF;
+width: 140px;
+height: 28px;
+line-height: 28px;
+text-align: center;
+left: 50%;
+top: 50%;
+background-color: rgb(46, 81, 162);
+margin-left: -70px;
+margin-top: -14px;
+border-radius: 5px;
 }
 
 #modalgrid {
@@ -432,7 +439,7 @@ to    {-webkit-filter: blur(0px);}
   justify-content: space-around;
 
   list-style: none;
-  padding: 1rem;
+  padding: 10px 0px 10px 0px;
   margin: 0 0 0 0;
 }
 

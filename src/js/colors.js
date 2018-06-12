@@ -39,3 +39,10 @@ window.onclick = function(event) {
     }
 }
 }
+
+$(document).ready(function () {
+
+  $(document).on('click', '.spoilertext', function() {
+    $(this).removeClass('on');
+  });
+});
