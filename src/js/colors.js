@@ -39,3 +39,11 @@ window.onclick = function(event) {
     }
 }
 }
+
+//Spoiler Text blur
+$(document).ready(function () {
+
+  $(document).on('click', '.spoiler', function() {
+    $(this).removeClass('on');
+  });
+});

@@ -400,11 +400,8 @@ p.modaldesc {
 }
 
 .spoilertext {
-<<<<<<< HEAD
-=======
 	filter: blur(3px);
   transition: .3s -webkit-filter linear;
->>>>>>> b16713c3ade2a0ffcbe2f246df6b709d567c5dfb
   font-size: 15px;
   margin: 4px 4px 4px 4px;
   -webkit-backface-visibility: hidden;
