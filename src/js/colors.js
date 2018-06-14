@@ -40,9 +40,9 @@ window.onclick = function(event) {
 }
 }
 
-$(document).ready(function () {
+$(document).ready(function (removespoiler) {
 
-  $(document).on('click', '.spoilertext', function() {
+  $(document).on('click', '.spoilertext', function(removespoiler) {
     $(this).removeClass('on');
   });
 });

@@ -383,7 +383,7 @@ h3.modaltitle {
   height: 320px;
   border-radius: 2px 2px 2px 2px;
   padding: 5px;
-  background-color: #b1b2ae;
+  background-color: #DCDDE1;
 }
 
 p.modaldesc {
@@ -404,7 +404,7 @@ font-size: 15px;
 margin: 0 auto;
 cursor: pointer;
 position: relative;
-background-color: #B1B2AE;
+background-color: #DCDDE1;
 padding: 10px 10px 10px 10px;
 border-radius: 2px;
 color: #000000;
