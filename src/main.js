@@ -27,6 +27,16 @@ const {app, BrowserWindow, ipc} = require('electron')
     log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters))
   }
 
+  const windowSettings = {
+    alwaysOnTop: true,
+    autoHideMenuBar: true,
+    'webPreferences': {
+      nodeIntegration: false,
+      nodeIntegrationInWorker: true,
+      offscreen: true,
+    },
+  };
+
   // BrowserWindow script
   function createWindow () {
     win = new BrowserWindow({
