@@ -46,3 +46,14 @@ $(document).ready(function (removespoiler) {
     $(this).removeClass('on');
   });
 });
+
+
+//Copy Title Code
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}

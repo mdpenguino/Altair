@@ -13,6 +13,7 @@
 
 
 //temp storage for data
+//a for anime - m for manga
 var a_35849 = {title:"Darling in the FranXX", image_url:"https://myanimelist.cdn-dena.com/images/anime/1614/90408.jpg", progress:"1/6"};
 var a_36475 = {title:"Sword Art Online Alternative: Gun Gale Online", image_url:"https://myanimelist.cdn-dena.com/images/anime/1114/91791.jpg", progress:"1/6"};
 var a_30484 = {title:"Steins;Gate 0", image_url:"https://myanimelist.cdn-dena.com/images/anime/1031/90444.jpg", progress:"1/6"};

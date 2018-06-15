@@ -1,5 +1,6 @@
 /*is broken... for now*/
-var random_images_array = ["a.bmp",
+var random_images_array = [
+"a.bmp",
 "b.bmp"
 ];
 
