@@ -10,7 +10,7 @@ Theming:
 #32908f (darker blue)
 
 #2E51A2 (mal blue)
-#F75139(kitsu orange)
+#F75139 (kitsu orange)
 #402F3F (kitsu secondary)
 #0099FF (anilist blue)
 */
@@ -28,13 +28,15 @@ body::-webkit-scrollbar-thumb {
 
 ul#headergrid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   margin: 0 0 0 0;
 }
 
 li#headersection {
   display: block;
+  align-items:
+  
 }
 
 ul#gridcontainer {
