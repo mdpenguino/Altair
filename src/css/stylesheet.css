@@ -9,6 +9,15 @@ Theming:
 #EFEFEF (grey)
 #32908f (darker blue)
 
+#870505 (Spoiler Red)
+
+#c76363 (Link hover NSFW)
+#722525 (Link focus NSFW)
+
+#64B8C7 (Link hover blue)
+#256772 (Link focus blue)
+
+
 #2E51A2 (mal blue)
 #F75139 (kitsu orange)
 #402F3F (kitsu secondary)
@@ -97,7 +106,7 @@ a:hover {
 }
 
 a:focus {
-  color: #64B8C7;
+  color: #256772;
 }
 
 body {
@@ -278,7 +287,7 @@ a#imgtext {
   padding-right: 0px;
   user-select: none;
   cursor: default;
-  background-color: #2E51A2;
+  background: linear-gradient(-45deg, rgb(102, 102, 102), rgb(46, 81, 162));
   color: #EEEEEE;
 }
 
@@ -376,7 +385,7 @@ p.modaldesc {
   text-align: center;
   left: 50%;
   top: 50%;
-  background-color: rgb(46, 81, 162);
+  background-color: #870505;
   margin-left: -70px;
   margin-top: -14px;
   border-radius: 5px;
