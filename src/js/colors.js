@@ -12,6 +12,7 @@ window.addEventListener("load", showPage, false);
 function showPage() {
   document.documentElement.className = document.documentElement.className.replace("preloader","");
 }
+
 window.onload = function(){
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -40,20 +41,11 @@ window.onclick = function(event) {
 }
 }
 
+// jQuery Spoiler
+
 $(document).ready(function (removespoiler) {
 
   $(document).on('click', '.spoilertext', function(removespoiler) {
     $(this).removeClass('on');
   });
 });
-
-
-//Copy Title Code
-
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}

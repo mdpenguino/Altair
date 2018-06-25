@@ -287,7 +287,7 @@ a#imgtext {
   padding-right: 0px;
   user-select: none;
   cursor: default;
-  background: linear-gradient(-45deg, rgb(102, 102, 102), rgb(46, 81, 162));
+  background: linear-gradient(-45deg, #666666, #2E51A2 65%);
   color: #EEEEEE;
 }
 
@@ -321,8 +321,9 @@ a#imgtext {
 
 /* Modal Content */
 h3.modaltitle {
-  margin-top: 11px;
+  margin-top: 10px;
   margin-bottom: 8px;
+  letter-spacing: 0.065em;
 }
 
 .modal-content {
