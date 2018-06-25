@@ -17,6 +17,11 @@ Theming:
 #64B8C7 (Link hover blue)
 #256772 (Link focus blue)
 
+Colour Codes for Ratings
+#99c140 (green)
+#e8812c (amber)
+#cc3232 (red)
+
 
 #2E51A2 (mal blue)
 #F75139 (kitsu orange)
@@ -26,6 +31,7 @@ Theming:
 
 body::-webkit-scrollbar {
   width: 10px;
+  background: #545454;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -185,6 +191,28 @@ p#navheader-text {
   padding: 8px 0 8px 16px;
 }
 
+#score {
+  position: absolute;
+  padding: 4px;
+  border-radius: 8px;
+  z-index: 10;
+  top: 12px;
+  right: 12px;
+  background: #cc3232;
+  color: #EFEFEF;
+  pointer-events: none;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 29px;
+  text-align: center;
+  transition: opacity 1s;
+  opacity: 1;
+  transform: translateZ(0)
+}
+
+.card:hover #score {
+  opacity: 0.55;
+}
+
 .card {
   width: 225px;
   max-width: 225px;
@@ -247,8 +275,10 @@ a#imgtext {
 }
 
 .card:hover .cardimg {
-    -webkit-filter: blur(0px);
-    transition: 1s ease-in-out;
+  -webkit-filter: blur(0px);
+  transition: 1s ease-in-out;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0);
 }
 
 .container {
@@ -337,7 +367,7 @@ h3.modaltitle {
   width: 85%;
   animation: fadeModal 0.5s ease;
   border-radius: 10px 10px 8px 8px;
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 @-webkit-keyframes fadeModal {

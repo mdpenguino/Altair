@@ -41,6 +41,25 @@ window.onclick = function(event) {
 }
 }
 
+$(function () {
+    // Score Color
+    var score = parseInt($('#score').text().trim());
+    var color = 'red';
+    if (!isNaN(score)) {
+        if (score >= 0) {
+            color = '#cc3232';
+        }
+        if (score >= 3) {
+            color = '#e8812c';
+        }
+        if (score >= 7) {
+            color = '#99c140';
+        }
+
+        $('#score').css('background', color);
+    }
+});
+
 // jQuery Spoiler
 
 $(document).ready(function (removespoiler) {
