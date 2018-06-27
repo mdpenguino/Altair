@@ -43,7 +43,7 @@ window.onclick = function(event) {
 
 $(function () {
     // Score Color
-    var score = parseInt($('#score').text().trim());
+    var score = parseInt($('.numRat').text().trim());
     var color = 'red';
     if (!isNaN(score)) {
         if (score >= 0) {
@@ -56,7 +56,7 @@ $(function () {
             color = '#99c140';
         }
 
-        $('#score').css('background', color);
+        $('.numRat').css('background', color);
     }
 });
 
