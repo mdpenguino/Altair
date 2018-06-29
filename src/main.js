@@ -2,6 +2,10 @@ const {app, BrowserWindow, ipc} = require('electron')
   const path = require('path')
   const url = require('url')
 
+  //Version to console (from json)
+  var pjson = require('../package.json');
+  console.log("Altair version "+pjson.version);
+
   // timestamping console
   var log = console.log;
   console.log = function() {
