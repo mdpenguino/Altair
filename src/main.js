@@ -2,10 +2,6 @@ const {app, BrowserWindow, ipc} = require('electron')
   const path = require('path')
   const url = require('url')
 
-  //Version to console (from json)
-  var pjson = require('../package.json');
-  console.log("Altair version "+pjson.version);
-
   // timestamping console
   var log = console.log;
   console.log = function() {
@@ -30,6 +26,11 @@ const {app, BrowserWindow, ipc} = require('electron')
     }
     log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters))
   }
+
+  //Version to console (from json)
+  var pjson = require('../package.json');
+  console.log("Altair version "+pjson.version);
+
 
   const windowSettings = {
     alwaysOnTop: true,
