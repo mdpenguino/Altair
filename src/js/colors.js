@@ -41,8 +41,20 @@ window.onclick = function(event) {
 }
 }
 
+// jQuery Spoiler
+
+$(document).ready(function (removespoiler) {
+
+  $(document).on('click', '.spoilertext', function(removespoiler) {
+    $(this).removeClass('on');
+  });
+});
+
+
+/* Currently Disabled */
+// Score Colors!
+/*
 $(function () {
-    // Score Color
     var score = parseInt($('.numRat').text().trim());
     var color = 'red';
     if (!isNaN(score)) {
@@ -59,12 +71,4 @@ $(function () {
         $('.numRat').css('background', color);
     }
 });
-
-// jQuery Spoiler
-
-$(document).ready(function (removespoiler) {
-
-  $(document).on('click', '.spoilertext', function(removespoiler) {
-    $(this).removeClass('on');
-  });
-});
+*/
