@@ -461,7 +461,7 @@ p.modaldesc {
   font-weight: bold;
   padding-top: 4px;
   padding-right: 20px;
-  transition: color all 0.2s;
+  transition: color 1s;
 }
 
 .close:hover,
@@ -469,5 +469,5 @@ p.modaldesc {
   color: #F8454D;
   text-decoration: none;
   cursor: pointer;
-  transition: color all 0.2s;
+  transition: color 0.4s;
 }
