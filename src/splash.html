@@ -12,20 +12,13 @@
     <script>if (window.module) module = window.module;</script>
 
     <!-- stylesheet -->
-    <style>
-      .altairversion {
-      position: absolute;
-      bottom: 8px;
-      right: 16px;
-      }
-    </style>
   </head>
   <body>
     <div id="altairversion"></div>
 
     <script>
     var pjson = require('../package.json');
-    document.getElementById("altairversion").innerHTML = pjson.version;
+    document.getElementById("altairversion").innerHTML = "Ver: "+pjson.version;
     </script>
 
     <img src="../src/assets/icons/png/256x256.png" id="myImage" draggable="false">

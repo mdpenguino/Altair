@@ -2,7 +2,7 @@
   "name": "Altair",
   "productName": "Altair",
   "description": "My Anime List scraper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/main.js",
   "author": "mdpenguino",
   "license": "MIT",
