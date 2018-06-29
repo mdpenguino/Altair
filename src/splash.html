@@ -4,14 +4,30 @@
     <meta charset="utf-8">
     <link href="../src/css/splashsheet.css" type="text/css" rel="stylesheet">
 
-<!-- inline script for handling of jquery and other modules, import under jquery -->
-<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <!-- inline script for handling of jquery and other modules, import under jquery -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
 
-<script>if (window.module) module = window.module;</script>
+    <script>if (window.module) module = window.module;</script>
+
+    <!-- stylesheet -->
+    <style>
+      .altairversion {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+      }
+    </style>
   </head>
   <body>
+    <div id="altairversion"></div>
+
+    <script>
+    var pjson = require('../package.json');
+    document.getElementById("altairversion").innerHTML = pjson.version;
+    </script>
+
     <img src="../src/assets/icons/png/256x256.png" id="myImage" draggable="false">
     <script type="text/javascript">
     jQuery(function(){
