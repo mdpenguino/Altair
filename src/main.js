@@ -52,7 +52,7 @@ const {app, BrowserWindow, ipc} = require('electron')
       minWidth: 800,
       minHeight: 600,
       fullscreenable: true,
-      frame: true,
+      frame: false,
       'web-preferences': {
         'web-security': false,
         nodeIntegration: false,
@@ -61,6 +61,7 @@ const {app, BrowserWindow, ipc} = require('electron')
         preload: path.join(__dirname, 'js/preload.js')
       }
     })
+//    win.setMenu(null);
     win.loadURL(url.format({
       pathname: path.join(__dirname, 'index.html'),
       protocol: 'file',
@@ -72,7 +73,7 @@ const {app, BrowserWindow, ipc} = require('electron')
       //splash.destroy()
     })
     win.webContents.setFrameRate(60)
-    win.webContents.openDevTools()
+    win.webContents.openDevTools({mode: 'detach'})
     win.webContents.focus()
 
 
