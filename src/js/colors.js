@@ -1,8 +1,9 @@
 //Colour switching code for header
 function changeColor(){
   var newColor = document.getElementById('background').value;
+//  var backColor = document.getElementById('color').value;
 	document.getElementById('header').style.background = newColor;
-  document.getElementById('header').style.background = newColor;
+  document.getElementById('title-bar').style.background = newColor;
 }
 
 //CSS Card Animation Delay / Wait for Page Load
