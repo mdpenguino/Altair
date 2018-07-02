@@ -38,10 +38,11 @@ img#myImage {
 }
 
 #altairversion {
-position: absolute;
-bottom: 12px;
-right: 20px;
-z-index: 5;
-color: #EFEFEF;
-text-align: left;
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  z-index: 5;
+  color: #EFEFEF;
+  direction: rtl;
+  /* text-align: left; */
 }
