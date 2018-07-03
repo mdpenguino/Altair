@@ -315,8 +315,8 @@ p#navheader-text {
 }
 
 @keyframes cardfadein {
-  from    {opacity: 0; transform: translateZ(0);}
-  to  {opacity: 1; transform: translateZ(0);}
+from    {opacity: 0; transform: translateZ(0);}
+to  {opacity: 1; transform: translateZ(0);}
 }
 
 .cardimg {
@@ -326,14 +326,14 @@ p#navheader-text {
   -webkit-filter: blur(0.5px);
   border-bottom: 2px solid #999999;
 
-  animation-duration: 0.55s;
   animation-name: cardimgfadein;
+  animation-duration: 0.55s;
   animation-delay: 0.3s;
 }
 
 @keyframes cardimgfadein {
-  from   {-webkit-filter: blur(0.9px); transform: translateZ(0);}
-  to {-webkit-filter: blur(0.5px); transform: translateZ(0);}
+from   {-webkit-filter: blur(0.9px); transform: translateZ(0);}
+to {-webkit-filter: blur(0.5px); transform: translateZ(0);}
 }
 
 a#imgtext {
