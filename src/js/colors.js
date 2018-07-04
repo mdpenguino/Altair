@@ -8,9 +8,7 @@ function changeColor(){
 
 //CSS Card Animation Delay / Wait for Page Load
 document.documentElement.className += "preloader";
-
 window.addEventListener("load", showPage, false);
-
 function showPage() {
   document.documentElement.className = document.documentElement.className.replace("preloader","");
 }
