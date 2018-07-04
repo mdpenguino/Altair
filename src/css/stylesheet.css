@@ -134,6 +134,14 @@ body, html {
   height: 100%;
 }
 
+webview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -284,18 +292,20 @@ p#navheader-text {
   background: #67696e;
   color: #EFEFEF;
   pointer-events: none;
-  -webkit-box-shadow: 0px 0px 40px 10px rgba(51,51,51,0.28);
+  box-shadow: 0px 0px 40px 10px rgba(51,51,51,0.28);
   width: 29px;
   text-align: center;
 
   /* Animation */
-  transition: opacity 1s;
+  transition: opacity 1s, box-shadow 1s;
+  transition-delay: 0.2s;
   opacity: 1;
   transform: translateZ(0)
 }
 
 .card:hover #score {
   opacity: 0.55;
+  box-shadow: 0px 0px 20px 5px rgba(51,51,51,0.15);
 }
 
 .card {
@@ -315,8 +325,8 @@ p#navheader-text {
 }
 
 @keyframes cardfadein {
-from    {opacity: 0; transform: translateZ(0);}
-to  {opacity: 1; transform: translateZ(0);}
+  from    {opacity: 0; transform: translateZ(0);}
+  to      {opacity: 1; transform: translateZ(0);}
 }
 
 .cardimg {
@@ -332,8 +342,8 @@ to  {opacity: 1; transform: translateZ(0);}
 }
 
 @keyframes cardimgfadein {
-from   {-webkit-filter: blur(0.9px); transform: translateZ(0);}
-to {-webkit-filter: blur(0.5px); transform: translateZ(0);}
+  from    {-webkit-filter: blur(0.9px); transform: translateZ(0);}
+  to      {-webkit-filter: blur(0.5px); transform: translateZ(0);}
 }
 
 a#imgtext {
