@@ -137,7 +137,7 @@ const store = new Store({
   })
 /*
   app.on('ready', function() {
-    win = newBrowserWindow(store.get('windowBounds'));
+    win = new BrowserWindow(store.get('windowBounds'));
 
     function saveWindowBounds() {
       store.set('windowBounds', win.getBounds());
