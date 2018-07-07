@@ -151,7 +151,7 @@ body {
 header {
   height: 96px;
   width: 100%;
-  background: gray;
+  background: transparent;
 }
 
 .grid {
@@ -280,10 +280,8 @@ p#navheader-text {
   z-index: 10;
   top: 12px;
   right: 12px;
-  background: #67696e;
   color: #EFEFEF;
   pointer-events: none;
-  box-shadow: 0px 0px 40px 10px rgba(51,51,51,0.28);
   width: 29px;
   text-align: center;
 
@@ -296,7 +294,7 @@ p#navheader-text {
 
 .card:hover #score {
   opacity: 0.55;
-  box-shadow: 0px 0px 20px 5px rgba(51,51,51,0.15);
+  box-shadow: 0px 0px 10px 5px rgba(0.15);
 }
 
 .card {
@@ -308,8 +306,8 @@ p#navheader-text {
 
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0,0.2);
   transition: box-shadow 0.3s linear;
-
   transform: translateZ(0);
+
   animation-duration: 0.5s;
   animation-name: cardfadein;
   animation-fill-mode: both;
@@ -325,7 +323,6 @@ p#navheader-text {
   width: 225px;
   height: 320px;
   border-radius: 10px 10px 0px 0px;
-  -webkit-filter: blur(0.5px);
   border-bottom: 2px solid #999999;
 
   animation-name: cardimgfadein;
@@ -340,12 +337,6 @@ p#navheader-text {
 
 .card:hover {
   box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card:hover .cardimg {
-  -webkit-filter: blur(0px);
-  transition: 1s ease-in-out;
-  transform: translateZ(0) scale(1.0, 1.0);
 }
 
 a#imgtext {

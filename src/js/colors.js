@@ -83,25 +83,92 @@ $(document).ready(function (removespoiler) {
       };
 })();
 
+$( document ).ready(function() {
+    $('span#score').each(function( index ) {
+          if($( this ).text()== '10'){
+            $(this).css("background-color","#99C13F");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(153,193,63,0.3)");
+          }
+          if($( this ).text()== '9'){
+            $(this).css("background-color","#ACC23E");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(172,194,62,0.3)");
+          }
+          if($( this ).text()== '8'){
+            $(this).css("background-color","#C0C33D");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(192,195,61,0.3)");
+          }
+          if($( this ).text()== '7'){
+            $(this).css("background-color","#C4B33B");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(196,179,59,0.3)");
+          }
+          if($( this ).text()== '6'){
+            $(this).css("background-color","#C59F3A");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(197,159,58,0.3)");
+          }
+          if($( this ).text()== '5'){
+            $(this).css("background-color","#C78B38");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(199,139,56,0.3)");
+          }
+          if($( this ).text()== '4'){
+            $(this).css("background-color","#C87636");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(200,118,54,0.3)");
+          }
+          if($( this ).text()== '3'){
+            $(this).css("background-color","#C96035");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(201,96,53,0.3)");
+          }
+          if($( this ).text()== '2'){
+            $(this).css("background-color","#CA4933");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(202,73,51,0.3)");
+          }
+          if($( this ).text()== '1'){
+            $(this).css("background-color","#CC3232");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(204,50,50,0.3)");
+          }
+          if($( this ).text()== '0'){
+            $(this).css("background-color","grey");
+            $(this).css("box-shadow","0px 0px 20px 10px rgba(128,128,128,0.3)");
+          }
+    });
+});
+
+$('span#score').bind('DOMNodeInserted DOMNodeRemoved', function(){
+  $('span#score').each(function( index ) {
+        if($( this ).text()== '10'){
+          $(this).css("background-color","#99C13F");
+        }
+        if($( this ).text()== '9'){
+          $(this).css("background-color","#ACC23E");
+        }
+        if($( this ).text()== '8'){
+          $(this).css("background-color","#C0C33D");
+        }
+        if($( this ).text()== '7'){
+          $(this).css("background-color","#C4B33B");
+        }
+        if($( this ).text()== '6'){
+          $(this).css("background-color","#C59F3A");
+        }
+        if($( this ).text()== '5'){
+          $(this).css("background-color","#C78B38");
+        }
+        if($( this ).text()== '4'){
+          $(this).css("background-color","#C87636");
+        }
+        if($( this ).text()== '3'){
+          $(this).css("background-color","#C96035");
+        }
+        if($( this ).text()== '2'){
+          $(this).css("background-color","#CA4933");
+        }
+        if($( this ).text()== '1'){
+          $(this).css("background-color","#CC3232");
+        }
+        if($( this ).text()== '0'){
+           $(this).css("background-color","grey");
+        }
+    });
+});
+
 
 /* Currently Disabled */
-// Score Colors!
-/*
-$(function () {
-    var score = parseInt($('.numRat').text().trim());
-    var color = 'red';
-    if (!isNaN(score)) {
-        if (score >= 0) {
-            color = '#cc3232';
-        }
-        if (score >= 3) {
-            color = '#e8812c';
-        }
-        if (score >= 7) {
-            color = '#99c140';
-        }
-
-        $('.numRat').css('background', color);
-    }
-});
-*/
