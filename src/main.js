@@ -1,6 +1,7 @@
 const {app, BrowserWindow, ipc} = require('electron')
   const path = require('path')
   const url = require('url')
+  const Store = require('../src/js/datastore.js');
 
   // timestamping console
   var log = console.log;
@@ -31,7 +32,6 @@ const {app, BrowserWindow, ipc} = require('electron')
   var pjson = require('../package.json');
   console.log("Altair version "+pjson.version);
 
-
   const windowSettings = {
     alwaysOnTop: true,
     autoHideMenuBar: true,
@@ -42,6 +42,20 @@ const {app, BrowserWindow, ipc} = require('electron')
     },
   };
 
+const store = new Store({
+  configName: 'user-preferences',
+  defaults: {
+    windowBounds: {
+      width: 800,
+      height: 600,
+      x: 0,
+      y: 0
+    }
+  }
+});
+
+
+
   // BrowserWindow script
   function createWindow () {
     win = new BrowserWindow({
@@ -51,6 +65,8 @@ const {app, BrowserWindow, ipc} = require('electron')
       height: 600,
       minWidth: 800,
       minHeight: 600,
+      x: 0,
+      y: 0,
       fullscreenable: true,
       frame: false,
       'web-preferences': {
@@ -119,6 +135,16 @@ const {app, BrowserWindow, ipc} = require('electron')
     createWindow()
     console.log('Altair Loaded')
   })
+/*
+  app.on('ready', function() {
+    win = newBrowserWindow(store.get('windowBounds'));
+
+    function saveWindowBounds() {
+      store.set('windowBounds', win.getBounds());
+    }
+    win.on('resize', saveWindowBounds);
+    win.on('move', saveWindowBounds);
+  }); */
 
   app.on('windows-all-closed', () => {
     if (process.platform !== 'darwin') {
