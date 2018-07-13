@@ -1,11 +1,11 @@
 //ipc
-const ipc = electron.ipcRenderer
+//const ipc = electron.ipcRenderer
 
 //martins code
 const shell = require('electron').shell;
 
 // assuming $ is jQuery
-$(document).on('click', 'a[href^="http"]', function(event) {
+$(document).on('click', 'a[href^="https"]', function(event) {
     event.preventDefault();
     shell.openExternal(this.href);
 });
