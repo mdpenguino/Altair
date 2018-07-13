@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <body background="../src/assets/background.png">
-    Node.js Version: <script>document.write(process.versions.node)</script>
-    Chromium Version: <script>document.write(process.versions.chrome)</script>
-    Electron Version: <script>document.write(process.versions.electron)</script>
-  </body>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+  <!-- normal script imports etc  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
+  <script src="../src/js/about.js" type="text/javascript"></script>
+  <script>
+    var pjson = require('../package.json');
+    document.getElementById("altairversion").innerHTML = "Ver: "+pjson.version;
+  </script>
+  <!-- Insert this line after script imports -->
+  <script>if (window.module) module = window.module;</script>
+</head>
+<body background="../src/assets/background.png">
+  <div class="infoContainer">
+    <p class="infoLabel">Node.js Version: <span class="infoLabelText"><script>document.write(process.versions.node)</script></span></p>
+    <p class="infoLabel">Chromium Version: <span class="infoLabelText"><script>document.write(process.versions.chrome)</script></span></p>
+    <p class="infoLabel">Electron Version: <span class="infoLabelText"><script>document.write(process.versions.electron)</script></span></p>
+    <p class="infoLabel">Altair Version: <span class="infoLabelText"><a href="https://github.com/mdpenguino/altair/releases"><script>document.write(pjson.version)</script></a></span></p>
+  </div>
+</body>
 </html>

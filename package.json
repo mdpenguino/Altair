@@ -5,11 +5,12 @@
   "version": "0.1.1",
   "main": "src/main.js",
   "author": "mdpenguino",
+  "homepage": "https://github.com/mdpenguino/altair",
   "license": "MIT",
   "private": "true",
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/mdpenguino/altair.git"
+    "url": "https://github.com/mdpenguino/altair.git"
   }
 }

@@ -525,3 +525,19 @@ p.modaldesc {
   cursor: pointer;
   transition: color 0.4s;
 }
+
+.infoContainer {
+  margin: 5px;
+  color: #EAEFEF;
+}
+
+.infoLabel {
+  padding: 0px;
+  margin: 10px;
+  font-weight: 250;
+}
+
+.infoLabelText {
+  color: #EFEFEF;
+  font-weight: 100;
+}
