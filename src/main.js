@@ -131,12 +131,12 @@ function createSplash () {
 function createInfo () {
   info = new BrowserWindow({
     show: false,
-    width: 256,
-    height: 256,
-    minWidth: 256,
-    minHeight: 256,
-    maxWidth: 256,
-    maxHeight: 256,
+    width: 384,
+    height: 384,
+    minWidth: 384,
+    minHeight: 384,
+    maxWidth: 384,
+    maxHeight: 384,
     fullscreenable: false,
     maximizable: false,
     frame: false,
