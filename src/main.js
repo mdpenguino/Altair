@@ -1,7 +1,7 @@
 const {app, BrowserWindow, ipc} = require('electron')
 const path = require('path')
 const url = require('url')
-//const Store = require('../src/js/datastore.js');
+const Store = require('../src/js/datastore.js');
 
 // timestamping console
 var log = console.log;
@@ -54,8 +54,6 @@ const store = new Store({
   }
 });
 
-
-
   // BrowserWindow script
   function createWindow () {
     win = new BrowserWindow({
@@ -99,42 +97,42 @@ const store = new Store({
     })
   }
 
-  function createSplash () {
-    splash = new BrowserWindow({
-      show: false,
-      width: 256,
-      height: 256,
-      minWidth: 256,
-      minHeight: 256,
-      maxWidth: 256,
-      maxHeight: 256,
-      fullscreenable: false,
-      maximizable: false,
-      frame: false,
-      transparent: true,
-      resizable: false,
-      icon: path.join(__dirname, 'assets/icons/png/256x256.png')
-    })
-    splash.once('ready-to-show', () => {
-      splash.show()
-      console.log('Altair Splash Loaded')
-    })
-    splash.loadURL(url.format({
-      pathname: path.join(__dirname, 'splash.html'),
-      protocol: 'file',
-      slashes: true
-    }))
-    splash.on('closed', () => {
-      splash = null
-      console.log('Altair Splash Closed')
-    })
-  }
-
-  app.on('ready', () => {
-    createSplash()
-    createWindow()
-    console.log('Altair Loaded')
+function createSplash () {
+  splash = new BrowserWindow({
+    show: false,
+    width: 256,
+    height: 256,
+    minWidth: 256,
+    minHeight: 256,
+    maxWidth: 256,
+    maxHeight: 256,
+    fullscreenable: false,
+    maximizable: false,
+    frame: false,
+    transparent: true,
+    resizable: false,
+    icon: path.join(__dirname, 'assets/icons/png/256x256.png')
   })
+  splash.once('ready-to-show', () => {
+    splash.show()
+    console.log('Altair Splash Loaded')
+  })
+  splash.loadURL(url.format({
+    pathname: path.join(__dirname, 'splash.html'),
+    protocol: 'file',
+    slashes: true
+  }))
+  splash.on('closed', () => {
+    splash = null
+    console.log('Altair Splash Closed')
+  })
+}
+
+app.on('ready', () => {
+  createSplash()
+  createWindow()
+  console.log('Altair Loaded')
+})
 /*
   app.on('ready', function() {
     win = new BrowserWindow(store.get('windowBounds'));
