@@ -526,6 +526,38 @@ p.modaldesc {
   transition: color 0.4s;
 }
 
+#button-container {
+  align-items: center;
+  vertical-align: bottom;
+}
+
+#aboutClose {
+  background-color: transparent;
+  border: 2px solid #F1F1F1;
+  border-radius: 4px;
+  color: #F1F1F1;
+  font-size: 16px;
+  transition: border 0.5s, border-radius 0.5s, color 0.5s;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#aboutClose:hover {
+  border: 2px solid #d2d2d2;
+  border-radius: 8px;
+  color: #d2d2d2;
+}
+
+#aboutClose:focus {
+  border: 2px solid #8a8a8a;
+  border-radius: 10px;
+  color: #8a8a8a;
+}
+
+
 .infoContainer {
   margin: 5px;
   color: #EAEFEF;
