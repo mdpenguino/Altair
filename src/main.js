@@ -128,9 +128,41 @@ function createSplash () {
   })
 }
 
+function createInfo () {
+  info = new BrowserWindow({
+    show: false,
+    width: 256,
+    height: 256,
+    minWidth: 256,
+    minHeight: 256,
+    maxWidth: 256,
+    maxHeight: 256,
+    fullscreenable: false,
+    maximizable: false,
+    frame: false,
+    transparent: false,
+    resizable: false,
+    icon: path.join(__dirname, 'assets/icons/png/256x256.png')
+  })
+  info.once('ready-to-show', () => {
+    info.show()
+    console.log('Altair Info Loaded')
+  })
+  info.loadURL(url.format({
+    pathname: path.join(__dirname, 'about.html'),
+    protocol: 'file',
+    slashes: true
+  }))
+  info.on('closed', () => {
+    splash = null
+    console.log('Altair Info Closed')
+  })
+}
+
 app.on('ready', () => {
   createSplash()
   createWindow()
+  createInfo()
   console.log('Altair Loaded')
 })
 /*
