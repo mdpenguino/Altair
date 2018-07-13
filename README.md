@@ -6,6 +6,5 @@ Electron built anime tracker, with planned support for My Anime List, Kitsu and 
 ## Module Credits
 - [Node-MPV](https://github.com/00SteinsGate00/Node-MPV) by 00SteinsGate00
 - [Popura](https://github.com/lubien/popura) by Lubien
-- [electron-titlebar](https://www.npmjs.com/package/electron-titlebar) by Lubien
 
 ## Misc. Credits
