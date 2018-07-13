@@ -147,6 +147,7 @@ function createInfo () {
     info.show()
     console.log('Altair Info Loaded')
   })
+  
   info.loadURL(url.format({
     pathname: path.join(__dirname, 'about.html'),
     protocol: 'file',

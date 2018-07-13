@@ -1,3 +1,7 @@
+//ipc
+const ipc = electron.ipcRenderer
+
+//martins code
 const shell = require('electron').shell;
 
 // assuming $ is jQuery
