@@ -162,5 +162,5 @@ $('span#score').bind('DOMNodeInserted DOMNodeRemoved', function(){
     });
 });
 
-
+var hi = "hey, this is a message to check if this works porperly"
 /* Currently Disabled */
