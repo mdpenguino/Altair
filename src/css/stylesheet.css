@@ -27,6 +27,8 @@ Colour Codes for Ratings
 #F75139 (kitsu orange)
 #402F3F (kitsu secondary)
 #0099FF (anilist blue)
+
+#d1e3aa
 */
 
 ::selection {
@@ -166,6 +168,7 @@ header {
 *::before,
 *::after {
   box-sizing: inherit;
+  text-rendering: optimizeSpeed;
 }
 
 *:focus {
@@ -207,6 +210,19 @@ a:focus {
   transition: all 0.2s;
 }
 
+a.cardLink {
+  color: #000000;
+}
+
+a.cardLink:hover {
+  transition: all 0.2s;
+  color: #64B8C7;
+}
+
+a.cardLink:focus {
+  color: #256772;
+  transition: all 0.2s;
+}
 
 /* Custom Select */
 .select {
@@ -287,14 +303,16 @@ p#navheader-text {
 
   /* Animation */
   transition: opacity 1s, box-shadow 1s;
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
   opacity: 1;
   transform: translateZ(0)
 }
 
 .card:hover #score {
-  opacity: 0.55;
-  box-shadow: 0px 0px 10px 5px rgba(0.15);
+/*  opacity: 0.55;
+  box-shadow: 0px 0px 10px 5px rgba(0.15); */
+  opacity: 0;
+  box-shadow: 0px 0px 0px 0px rgba(0.00);
 }
 
 .card {
@@ -361,6 +379,29 @@ a#imgtext {
 .cardtext {
   margin-top: 2px;
 }
+
+#air {
+  position: absolute;
+  padding: 4px;
+  border-radius: 8px;
+  z-index: 10;
+  bottom: 8px;
+  right: 8px;
+  background-color: #619e2f;
+  color: #EFEFEF;
+  pointer-events: none;
+  height: 29px;
+
+  /* Animation */
+  transition: opacity 1s;
+  transition-delay: 0.4s;
+  opacity: 1;
+  transform: translateZ(0)
+}
+
+/* .card:hover #air {
+  opacity: 0;
+} */
 
 .splashbody {
   background-color: transparent;
@@ -527,8 +568,11 @@ p.modaldesc {
 }
 
 #button-container {
-  align-items: center;
-  vertical-align: bottom;
+  position: fixed;
+  bottom: 30px;
+  left: 150px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 #aboutClose {
