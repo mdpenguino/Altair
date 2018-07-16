@@ -5,5 +5,5 @@ const fs = require('fs');
 var appdata = app.getPath
 var configjsonpath = appdata + "config" + ".json"
 
-console.log appdata
-console.log configjsonpath
+console.log(appdata)
+console.log(configjsonpath)
