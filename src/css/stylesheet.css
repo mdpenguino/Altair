@@ -120,7 +120,7 @@ ul#gridcontainer:first-child {
   margin-top: 0px;
 }
 
-li#gridcards {
+li.gridcards {
   height: 384px;
   border: 1px solid transparent;
 }
