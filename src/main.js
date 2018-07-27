@@ -28,19 +28,19 @@ console.log = function() {
   log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters))
 }
 
-  //Version to console (from json)
-  var pjson = require('../package.json');
-  console.log("Altair version "+pjson.version);
+//Version to console (from json)
+var pjson = require('../package.json');
+console.log("Altair version "+pjson.version);
 
-  const windowSettings = {
-    alwaysOnTop: true,
-    autoHideMenuBar: true,
-    'webPreferences': {
-      nodeIntegration: false,
-      nodeIntegrationInWorker: true,
-      offscreen: true,
-    },
-  };
+const windowSettings = {
+  alwaysOnTop: true,
+  autoHideMenuBar: true,
+  'webPreferences': {
+    nodeIntegration: false,
+    nodeIntegrationInWorker: true,
+    offscreen: true,
+  },
+};
 
 const store = new Store({
   configName: 'user-preferences',
@@ -54,51 +54,48 @@ const store = new Store({
   }
 });
 
-const grab = require('../src/grab');
-let val = grab.begin();
-
-  // BrowserWindow script
-  function createWindow () {
-    win = new BrowserWindow({
-      show: false,
-      icon: path.join(__dirname, 'assets/icons/png/256x256.png'),
-      width: 800,
-      height: 600,
-      minWidth: 800,
-      minHeight: 600,
-      x: 0,
-      y: 0,
-      fullscreenable: true,
-      frame: false,
-      'web-preferences': {
-        'web-security': false,
-        nodeIntegration: false,
-        nodeIntegrationInWorker: true,
-        offscreen: true,
-        preload: path.join(__dirname, 'js/preload.js')
-      }
-    })
+// BrowserWindow script
+function createWindow () {
+  win = new BrowserWindow({
+    show: false,
+    icon: path.join(__dirname, 'assets/icons/png/256x256.png'),
+    width: 800,
+    height: 600,
+    minWidth: 800,
+    minHeight: 600,
+    x: 0,
+    y: 0,
+    fullscreenable: true,
+    frame: false,
+    'web-preferences': {
+      'web-security': false,
+      nodeIntegration: false,
+      nodeIntegrationInWorker: true,
+      offscreen: true,
+      preload: path.join(__dirname, 'js/preload.js')
+    }
+  })
 //    win.setMenu(null);
-    win.loadURL(url.format({
-      pathname: path.join(__dirname, 'index.html'),
-      protocol: 'file',
-      slashes: true,
-    }))
-    win.once('ready-to-show', () => {
-      win.maximize()
-      win.show()
-      //splash.destroy()
-    })
-    win.webContents.setFrameRate(60)
-    win.webContents.openDevTools({mode: 'detach'})
-    win.webContents.focus()
+  win.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file',
+    slashes: true,
+  }))
+  win.once('ready-to-show', () => {
+    win.maximize()
+    win.show()
+    //splash.destroy()
+  })
+  win.webContents.setFrameRate(60)
+  win.webContents.openDevTools({mode: 'detach'})
+  win.webContents.focus()
 
 
-    win.on('closed', () => {
-      win = null
-      console.log('Altair Closed')
-    })
-  }
+  win.on('closed', () => {
+    win = null
+    console.log('Altair Closed')
+  })
+}
 
 function createSplash () {
   splash = new BrowserWindow({
@@ -179,14 +176,14 @@ app.on('ready', () => {
     win.on('move', saveWindowBounds);
   }); */
 
-  app.on('windows-all-closed', () => {
-    if (process.platform !== 'darwin') {
-      app.quit()
-    }
-  })
+app.on('windows-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
 
-  app.on('activate', () => {
-    if (win === null) {
-      createWindow()
-    }
-  })
+app.on('activate', () => {
+  if (win === null) {
+    createWindow()
+  }
+})

@@ -403,6 +403,27 @@ a#imgtext {
   opacity: 0;
 } */
 
+.cardflex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline;
+}
+
+.cardflex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.cardflex-item:nth-child(2) {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
 .splashbody {
   background-color: transparent;
   align-items: center;
