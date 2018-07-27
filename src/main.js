@@ -2,6 +2,7 @@ const {app, BrowserWindow, ipc} = require('electron')
 const path = require('path')
 const url = require('url')
 const Store = require('../src/js/datastore.js');
+const grab = require('../src/grab');
 
 // timestamping console
 var log = console.log;
@@ -53,6 +54,8 @@ const store = new Store({
     }
   }
 });
+
+grab.begin();
 
 // BrowserWindow script
 function createWindow () {
