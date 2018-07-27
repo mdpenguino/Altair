@@ -54,6 +54,9 @@ const store = new Store({
   }
 });
 
+const grab = require('../src/grab');
+let val = grab.begin();
+
   // BrowserWindow script
   function createWindow () {
     win = new BrowserWindow({
@@ -147,7 +150,7 @@ function createInfo () {
     info.show()
     console.log('Altair Info Loaded')
   })
-  
+
   info.loadURL(url.format({
     pathname: path.join(__dirname, 'about.html'),
     protocol: 'file',
