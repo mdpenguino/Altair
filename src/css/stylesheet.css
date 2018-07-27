@@ -357,18 +357,6 @@ p#navheader-text {
   box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-a#imgtext {
-  -webkit-filter: blur(0px);
-  position: absolute;
-  top: 1px;
-  right: 15px;
-  font-size: 40px;
-  -webkit-text-fill-color: #FCC151;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #EEEEEE;
-  cursor: default;
-}
-
 .container {
   padding: 0px 12px;
   height: 60px;
