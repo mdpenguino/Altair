@@ -30,7 +30,7 @@ console.log = function() {
 }
 
 //Version to console (from json)
-console.log("SEIZON SENRYAKU");
+console.log("SEIZON SENRYAKUUUUUUU");
 var pjson = require('../package.json');
 console.log("Altair version "+pjson.version);
 
