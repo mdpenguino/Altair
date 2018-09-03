@@ -6,6 +6,7 @@ module.exports = {
     const {app, BrowserWindow, ipc} = require('electron');
     const xml2js = require('xml2js');
     const util = require('util');
+    const malScraper = require('mal-scraper');
     console.log("grab module is loaded");
 
     //grab xml from mal and save to appdata
@@ -34,7 +35,7 @@ module.exports = {
 var parser = new xml2js.Parser();
 fs.readFile(appdata + '/mal.xml', function(err, data) {
     parser.parseString(data, function (err, result) {
-        console.dir(result);
+//        console.dir(result);
         console.log('Done');
         var jsonData = JSON.stringify(result, null, 3);
         fs.writeFile(appdata + "/test.json", jsonData, function(err) {
@@ -49,6 +50,14 @@ fs.readFile(appdata + '/mal.xml', function(err, data) {
 
 
     //fill with extra data (image paths, descriptions, etc. ).  Also, scrape images to appdata
+
+
+    //scrape images
+    const url = "https://myanimelist.net/anime/" + "20047"
+
+    malScraper.getInfoFromURL(url)
+      .then((data) => console.log(JSON.stringify(data)))
+      .catch((err) => console.log(err))
 
 
   }
