@@ -368,28 +368,9 @@ p#navheader-text {
   margin-top: 2px;
 }
 
-#air {
-  position: absolute;
-  padding: 4px;
-  border-radius: 8px;
-  z-index: 10;
-  bottom: 8px;
-  right: 8px;
-  background-color: #619e2f;
-  color: #EFEFEF;
-  pointer-events: none;
-  height: 29px;
-
-  /* Animation */
-  transition: opacity 1s;
-  transition-delay: 0.4s;
-  opacity: 1;
-  transform: translateZ(0)
+.cardtext.air {
+  color: #3bb021;
 }
-
-/* .card:hover #air {
-  opacity: 0;
-} */
 
 .cardflex-container {
     display: flex;
