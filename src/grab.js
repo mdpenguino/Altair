@@ -53,7 +53,7 @@ fs.readFile(appdata + '/mal.xml', function(err, data) {
 
 
     //scrape images
-    const url = "https://myanimelist.net/anime/" + "20047"
+    var url = "https://myanimelist.net/anime/" + "20047"
 
     malScraper.getInfoFromURL(url)
       .then((data) => console.log(JSON.stringify(data)))
