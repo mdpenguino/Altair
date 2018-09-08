@@ -7,6 +7,7 @@ module.exports = {
     const xml2js = require('xml2js');
     const util = require('util');
     const malScraper = require('mal-scraper');
+    const http = require('http')
     console.log("grab module is loaded");
 
     //grab xml from mal and save to appdata
@@ -54,10 +55,28 @@ fs.readFile(appdata + '/mal.xml', function(err, data) {
 
     //scrape images
     var url = "https://myanimelist.net/anime/" + "20047"
+    var iddata
 
     malScraper.getInfoFromURL(url)
-      .then((data) => console.log(JSON.stringify(data)))
+      .then((data) => console.log(JSON.stringify(data.title)))
       .catch((err) => console.log(err))
+      .then((data) => {
+          // fulfillment
+          if (fs.existsSync(appdata + "/covers/" + "20047" + ".jpg")) {
+            // Do something
+            console.log("A file already exists at location: " + appdata + "/covers/" + "20047" + ".jpg" + " - SKIPPING")
+          } else {
+              // Do something
+              console.log(JSON.stringify(data.title))
+              console.log("No file exists at location: " + appdata + "/covers/" + "20047" + ".jpg" + " - GRABBING")
+              var request = http.get(JSON.stringify(data.picture), function(response) {
+                response.pipe(appdata + "/covers/" + "20047" + ".jpg");
+              })
+            }
+        }, (reason) => {
+          // rejection
+        });
+
 
 
   }
