@@ -80,13 +80,23 @@ Colour Codes for Ratings
  width: 32px;
  background-color: transparent;
  border: none;
- color: #F1F1F1;
+ color: #dfdfdf;
  font-size: 16px;
 }
 
-button#title-bar-btns:hover {
-  background-color: red;
-  color: black;
+#min-btn:hover {
+  background-color: #a7a7ac;
+  color: #f1f1f1;
+}
+
+#max-btn:hover {
+  background-color: #a7a7ac;
+  color: #f1f1f1;
+}
+
+#close-btn:hover {
+  background-color: #aa2020;
+  color: #f1f1f1;
 }
 
 ul#headergrid {
