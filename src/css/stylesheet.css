@@ -70,7 +70,7 @@ Colour Codes for Ratings
   -webkit-app-region: no-drag;
   position: fixed;
   top: 0px;
-  right: 6px;
+  right: 0px;
   background: transparent;
   border: none;
 }
@@ -82,18 +82,34 @@ Colour Codes for Ratings
  border: none;
  color: #dfdfdf;
  font-size: 16px;
+ padding: 0;
+}
+
+button#min-btn {
+  padding: 0px;
+}
+
+button#max-btn {
+  padding: 0px;
+}
+
+button#close-btn {
+  padding: 0px;
 }
 
 #min-btn:hover {
   background-color: #a7a7ac;
+  padding: 0;
 }
 
 #max-btn:hover {
   background-color: #a7a7ac;
+  padding: 0;
 }
 
 #close-btn:hover {
   background-color: #aa2020;
+  padding: 0;
 }
 
 ul#headergrid {
@@ -217,7 +233,8 @@ a:hover {
 }
 
 a:focus {
-  color: #256772;
+  /*color: #256772;*/
+  color: #8ECBFE;
   transition: all 0.2s;
 }
 
