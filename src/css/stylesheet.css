@@ -55,6 +55,7 @@ Colour Codes for Ratings
 }
 
 #title-bar {
+  display: flex;
   -webkit-app-region: drag;
   height: 32px;
   background-color: #2E51A2;
@@ -64,6 +65,17 @@ Colour Codes for Ratings
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
   color: white;
+}
+
+#title-bar-icon {
+  position: fixed;
+}
+
+#title {
+  position: fixed;
+  padding-left: 30px;
+  padding-top: 2px;
+  font-size: 17px;
 }
 
 #title-bar-btns {
@@ -130,7 +142,6 @@ ul#gridcontainer {
   grid-gap: 1rem;
   justify-content: space-between;
 
-  /* boring properties */
   list-style: none;
   background: #545454;
   padding: 1rem;
@@ -308,6 +319,7 @@ select {
   background-color: #666666;
   border-bottom: 1px solid #999999;
   border-top: 1px solid #999999;
+  font-size: 15.5px;
 }
 
 p#navheader-text {
