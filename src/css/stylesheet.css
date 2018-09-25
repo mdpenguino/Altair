@@ -152,6 +152,8 @@ ul#gridcontainer {
   bottom: 0;
   width: 100%;
   overflow-x: hidden;
+
+  overscroll-behavior: auto contain;
 }
 
 ul#gridcontainer:first-child {
