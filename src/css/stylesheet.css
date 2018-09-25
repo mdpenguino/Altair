@@ -148,7 +148,7 @@ ul#gridcontainer {
   margin: 0 0 0 0;
   overflow: scroll;
   position: absolute;
-  top: 58px;
+  top: 58.5px;
   bottom: 0;
   width: 100%;
   overflow-x: hidden;
@@ -326,7 +326,7 @@ p#navheader-text {
   background-color: #666666;
   color: #f3f3f3;
   margin: 0 0 0 0;
-  padding: 1.5px 0 2px 16px;
+  padding: 1.5px 0 2px 8px;
   height: 24px;
 }
 
