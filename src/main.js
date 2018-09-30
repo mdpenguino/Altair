@@ -1,3 +1,4 @@
+// const definitions
 const {app, BrowserWindow, ipc} = require('electron')
 const path = require('path')
 const url = require('url')
@@ -11,10 +12,10 @@ console.log = function() {
   var other_parameters = Array.prototype.slice.call(arguments, 1);
 
   function formatConsoleDate (date) {
-    var hour = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
-    var milliseconds = date.getSeconds();
+    var hour = date.getHours();             // handler for hours
+    var minutes = date.getMinutes();        // handler for minutes
+    var seconds = date.getSeconds();        // handler for seconds
+    var milliseconds = date.getSeconds();   // handler for milliseconds
 
     return '[' +
            ((hour < 10) ? '0' + hour: hour) +
@@ -26,11 +27,13 @@ console.log = function() {
            ('00' + milliseconds).slice(-3) +
            '] ';
   }
-  log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters))
+  log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters)) // date&time parser
 }
+// Any 'console.log' called from this point on will be parsed with the date & time infront of it
 
-//Version to console (from json)
+// App Creatio
 console.log("SEIZON SENRYAKUUUUUUU");
+//Version to console (from json)
 var pjson = require('../package.json');
 console.log("Altair version "+pjson.version);
 
@@ -44,6 +47,7 @@ const windowSettings = {
   },
 };
 
+// Data Storage Method (currently broken)
 const store = new Store({
   configName: 'user-preferences',
   defaults: {
@@ -56,6 +60,7 @@ const store = new Store({
   }
 });
 
+// run 'mal data fetch'
 grab.begin();
 
 // BrowserWindow script
