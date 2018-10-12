@@ -653,3 +653,7 @@ p.modaldesc {
   color: #EFEFEF;
   font-weight: 100;
 }
+
+.infoLabelHeader {
+  margin: 5px;
+}
