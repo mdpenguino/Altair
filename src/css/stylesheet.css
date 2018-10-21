@@ -637,6 +637,13 @@ p.modaldesc {
   color: #8a8a8a;
 }
 
+a.release-href {
+  color: #376377;
+}
+a.release-href:hover {
+  transition: all 0.2s;
+  color: #64B8C7;
+}
 
 .infoContainer {
   margin: 5px;
