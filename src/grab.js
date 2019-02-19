@@ -56,7 +56,7 @@ fs.readFile(appdata + '/mal.xml', function(err, data) {
     //scrape images
     var url = "https://myanimelist.net/anime/" + "20047"
     var iddata
-
+/*
     malScraper.getInfoFromURL(url)
       .then((data) => console.log(JSON.stringify(data.title)))
       .catch((err) => console.log(err))
@@ -76,8 +76,9 @@ fs.readFile(appdata + '/mal.xml', function(err, data) {
         }, (reason) => {
           // rejection
         });
+*/
 
-
+/*Hey David, this is past you here, see that lovely code commented out above?  Yeah?  Well guess what, its broken.  You know why? Your trying to execute the promise in reverse order, of course data.title doesnt exist yet, promises work from the latest created instance up (bottom to top). Anyways, i'm pretty much talking out of my ass here, so future me (you) needs to check that all this is true before doing anything drastic.  Past David over and out.  */
 
   }
 }
