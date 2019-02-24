@@ -4,6 +4,7 @@ const path = require('path')
 const url = require('url')
 const Store = require('../src/js/datastore.js');
 const grab = require('../src/grab');
+const modal = require('electron-modal');
 
 // timestamping console
 var log = console.log;
@@ -173,6 +174,7 @@ app.on('ready', () => {
   createWindow()
   createInfo()
   console.log('Altair Loaded')
+  modal.setup();
 })
 /*
   app.on('ready', function() {

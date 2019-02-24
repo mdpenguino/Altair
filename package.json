@@ -9,7 +9,8 @@
   "license": "MIT",
   "private": "true",
   "dependencies": {
-    "mal-scraper": "^2.4.3",
+    "electron-modal": "^1.0.0",
+    "mal-scraper": "^2.4.5",
     "xml2js": "^0.4.19"
   },
   "repository": {
